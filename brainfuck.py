@@ -65,6 +65,6 @@ def main():
     #i decided not to go with a parser since an ast would be overkill for bf
     interp(tokens)
 
-main()
+main() #i have it all in a main function just because it looks nicer and i can re-use useful keywords like tokens.
 #todo
 #add comments/documentation
