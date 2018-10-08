@@ -5,7 +5,7 @@ def lexer(data):
     tokens = []
     for char in data:
         if char == ">" or char == "<" or char == "+" or char == "-" or char == "/" or char == "." or char == "," or char == "[" or char == "]":
-            #this is a really big if statement, if there is some way to make it smaller that i find out i will change it.
+            #this is a really big if statement, if there is some way to make it smaller that I find out I will change it.
             tokens.append(char)
     return tokens
 
@@ -58,13 +58,13 @@ def interp(tokens):
                         numofbrackets += 1
                     n -= 1
         n += 1
-        #note, there are no switch statements in python as far as i know
+        #note, there are no switch statements in python as far as I know
 
 def main():
     tokens = lexer(open(sys.argv[1], "r").read())
-    #i decided not to go with a parser since an ast would be overkill for bf
+    #I decided not to go with a parser since an ast would be overkill for bf
     interp(tokens)
 
-main() #i have it all in a main function just because it looks nicer and i can re-use useful keywords like tokens.
+main() #I have it all in a main function just because it looks nicer and I can re-use useful keywords like tokens.
 #todo
 #add comments/documentation
