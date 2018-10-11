@@ -47,6 +47,7 @@ def interp(tokens):
                     elif tokens[n] == "]":
                         numofbrackets -= 1
                     n += 1 
+                n -= 1
         elif tokens[n] == "]":
             if tape[pos] != 0:
                 numofbrackets = 1
